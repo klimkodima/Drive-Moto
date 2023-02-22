@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="assets/lib/rangeslider/rangeslider.css">
+  <link rel="stylesheet" href="assets/lib/rangeslider/rangeSlider.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
   <link rel="stylesheet" href="assets/lib/formstyler/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="assets/lib/formstyler/jquery.formstyler.css">
@@ -112,6 +112,149 @@
       </ul>
     </div>
   </div>
+  <section class="product-card">
+    <div class="container">
+      <div class="product-card-inner product-sale">
+        <a href="#" class="sale-label">Sale</a>
+        <div class="product-card-img-box ">
+          <img src="assets/images/content/gidrosikl1-big.png" alt="" class="product-card-img">
+          <p class="product-card-price-old">1 200 475 ₽</p>
+          <p class="product-card-price-new">1 100 475 ₽</p>
+          <a href="" class="product-card-sale-link">Нашли дешевле? Снизим цену!</a>
+        </div>
+        <div class="product-card-content">
+          <h1 class="product-card-content-title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
+          <p class="product-card-content-code">Код товара: 366666-2</p>
+          <div class="product-card-links">
+            <a href="#" class="product-card-content-heart-link">
+              <img src="assets/images/heart.svg" alt="heart">
+            </a>
+            <a href="#" class="product-card-content-comparison-link">
+              <img src="assets/images/comparison.svg" alt="comparison">
+            </a>
+            <a id="productCardRating" data-rateyo-read-only="true" data-rateyo-rating="4" title="Product Rating"
+              class="rating" data-rating="3.6" href="#"></a>
+          </div>
+          <div class="product-card-tabs">
+            <a href="#charFilter" class="tab product-card-tab tab-active">
+              Характеристики
+            </a>
+            <a href="#availFilter" class="tab product-card-tab">
+              Наличие в магазине
+            </a>
+          </div>
+          <div class="product-card-info">
+            <div id="charFilter" class=" content-item content-item-active">
+              <ul class="product-card-content-list">
+                <li class="product-card-content-item">
+                  <div class="product-card-content-item-name">Производитель</div>
+                  <div class="product-card-content-item-value">Канада</div>
+                </li>
+                <li class="product-card-content-item">
+                  <div class="product-card-content-item-name">Количество мест, шт: </div>
+                  <div class="product-card-content-item-value">3</div>
+                </li>
+                <li class="product-card-content-item">
+                  <div class="product-card-content-item-name">Мощность, л.с.</div>
+                  <div class="product-card-content-item-value">155</div>
+                </li>
+                <li class="product-card-content-item">
+                  <div class="product-card-content-item-name">Тип двигателя</div>
+                  <div class="product-card-content-item-value">Бензиновый</div>
+                </li>
+                <li class="product-card-content-item">
+                  <div class="product-card-content-item-name">Год выпуска</div>
+                  <div class="product-card-content-item-value"> 2018</div>
+                </li>
+              </ul>
+              <a href="#" class="product-card-content-item-show-more">Показать еще</a>
+              <div class="product-card-content-btn">
+                <button>Купить</button>
+              </div>
+            </div>
+            <div id="availFilter" class="content-item ">
+              availability tab content
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product-page-info">
+    <div class="container">
+      <div class="product-page-tabs">
+        <a href="#aboutProduct" class="tab product-tab ">
+          <span>О товаре</span>
+        </a>
+        <a href="#charProduct" class="tab product-tab">
+          <span>Характеристики</span>
+        </a>
+        <a href="#reviews" class="tab product-tab">
+          <span>Отзывы</span>
+        </a>
+        <a href="#pickup" class="tab product-tab tab-active">
+          <span>Самовывоз</span>
+        </a>
+        <a href="#delivery" class="tab product-tab">
+          <span> Доставка</span>
+        </a>
+        <a href="#service" class="tab product-tab">
+          <span>Cервис</span>
+        </a>
+        <a href="#guarantee" class="tab product-tab">
+          <span>Гарантия</span>
+        </a>
+      </div>
+      <div class="product-page-info">
+        <div id="aboutProduct" class="content-item">
+          О товаре
+        </div>
+        <div id="charProduct" class="content-item">
+          Характеристики
+        </div>
+        <div id="reviews" class="content-item">
+          Отзывы
+        </div>
+        <div id="pickup" class=" content-item content-item-active">
+          <ul class="product-card-content-list">
+            <li class="product-card-content-item">
+              <div class="product-card-content-item-name">Производитель</div>
+              <div class="product-card-content-item-value">Канада</div>
+            </li>
+            <li class="product-card-content-item">
+              <div class="product-card-content-item-name">Количество мест, шт: </div>
+              <div class="product-card-content-item-value">3</div>
+            </li>
+            <li class="product-card-content-item">
+              <div class="product-card-content-item-name">Мощность, л.с.</div>
+              <div class="product-card-content-item-value">155</div>
+            </li>
+            <li class="product-card-content-item">
+              <div class="product-card-content-item-name">Тип двигателя</div>
+              <div class="product-card-content-item-value">Бензиновый</div>
+            </li>
+            <li class="product-card-content-item">
+              <div class="product-card-content-item-name">Год выпуска</div>
+              <div class="product-card-content-item-value"> 2018</div>
+            </li>
+          </ul>
+          <a href="#" class="product-card-content-item-show-more">Показать еще</a>
+          <div class="product-card-content-btn">
+            <button>Купить</button>
+          </div>
+        </div>
+        <div id="delivery" class="content-item">
+          Доставка
+        </div>
+        <div id="service" class="content-item">
+          Cервис
+        </div>
+        <div id="guarantee" class="content-item">
+          Гарантия
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="footer">
     <div class="container">
       <div class="footer-top">

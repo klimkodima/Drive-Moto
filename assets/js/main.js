@@ -46,9 +46,34 @@ $(document).ready(function () {
     $(this).next().slideToggle();
   });
 
+  $('.extra-options').on('click', function (e) {
+    $(this).toggleClass('extra-options-active');
+    $(this).next().slideToggle();
+  });
+
+  $('.catalog-filters-btn-grid').on('click', function (e) {
+    $(this).addClass('catalog-filters-btn-active');
+    $('.catalog-filters-btn-line').removeClass('catalog-filters-btn-active');
+    $('.product-item-wrapper').removeClass('product-item-wrapper-list');
+  });
+
+  $('.catalog-filters-btn-line').on('click', function (e) {
+    $(this).addClass('catalog-filters-btn-active');
+    $('.catalog-filters-btn-grid').removeClass('catalog-filters-btn-active');
+    $('.product-item-wrapper').addClass('product-item-wrapper-list');
+  });
+
   $(".js-range-slider").ionRangeSlider({
     //hide_min_max: true,
     hide_from_to: true
- });
+  });
+
+  $(function () {
+    $("#productCardRating").rateYo({
+      ratedFill: "#1C62CD",
+      normalFill: "#C4C4C4",
+      spacing: "7px"
+    });
+  });
 
 });

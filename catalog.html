@@ -121,12 +121,12 @@
           <button class="catalog-filter-item">еще</button>
         </div>
         <div class="catalog-filters">
-          <select name="" id="" class="filter-style">
-            <option value=""></option>
+          <select aria-label="filters" id="" class="filter-style catalog-filters-select-item">
+            <option value="">По популярности</option>
             <option value=""></option>
             <option value=""></option>
           </select>
-          <button class="catalog-filters-btn-grid">
+          <button title="catalog-filters-btn-grid" class="catalog-filters-btn-grid catalog-filters-btn">
             <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2" />
               <rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
@@ -135,7 +135,7 @@
               <rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
             </svg>
           </button>
-          <button class="catalog-filters-btn-line">
+          <button title="catalog-filters-btn-line" class="catalog-filters-btn-line catalog-filters-btn">
             <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="1">
                 <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035" />
@@ -206,14 +206,14 @@
                   <li class="aside-filter-item-drop">
                     <p class="aside-filer-item-title filter-item-drop">Цена</p>
                     <div class="aside-filter-item-content">
-                      <input type="text" class="js-range-slider" name="my_range" value="" data-type="double"
+                      <input aria-label="range-slider" type="text" class="js-range-slider" name="my_range" value="" data-type="double"
                         data-min="100000" data-max="500000" data-from="150000" data-to="350000" data-grid="false">
                     </div>
                   </li>
                   <li class="aside-filter-item-lists">
                     <div class="filter-item-list">
                       <p class="aside-filer-item-title filter-item-list-title">Мощность, л.с.</p>
-                      <select class="filter-style filter-item-list-select">
+                      <select aria-label="pawer-filter1" class="filter-style filter-item-list-select">
                         <option value="">90</option>
                         <option value="">130</option>
                         <option value="">154</option>
@@ -223,7 +223,7 @@
                     </div>
                     <div class="filter-item-list">
                       <p class="aside-filer-item-title filter-item-list-title">Мощность двигателя, л.с.</p>
-                      <select class="filter-style filter-item-list-select">
+                      <select aria-label="pawer-filter2" class="filter-style filter-item-list-select">
                         <option value="">90</option>
                         <option value="">130</option>
                         <option value="">154</option>
@@ -233,7 +233,7 @@
                     </div>
                     <div class="filter-item-list">
                       <p class="aside-filer-item-title filter-item-list-title">Макс. скорость</p>
-                      <select class="filter-style filter-item-list-select">
+                      <select aria-label="pawer-filter3" class="filter-style filter-item-list-select">
                         <option value="">90</option>
                         <option value="">130</option>
                         <option value="">154</option>
@@ -295,27 +295,40 @@
                           SeaDoo GTR 230
                         </label>
                       </div>
+                      <div class="filter-more">
+                        <button type="submit" class="filter-more-btn">Показать еще</button>
+                      </div>
                     </div>
                   </li>
-
-                  <li class="aside-filter-item-drop">
+                  <li class="aside-filter-item-drop action">
                     <p class="aside-filer-item-title filter-item-drop">Акции</p>
                     <div class="aside-filter-item-content">
                       <div class="aside-filter-item-content-box">
                         <label class="aside-filter-content-label">
                           <input type="checkbox" class="filter-style">
-                          В наличии
+                          <span class="aside-filter-content-label-text">Sale</span>
                         </label>
                       </div>
                       <div class="aside-filter-item-content-box">
                         <label class="aside-filter-content-label">
                           <input type="checkbox" class="filter-style">
-                          Под заказ
+                          <span class="aside-filter-content-label-text">New</span>
+                        </label>
+                      </div>
+                      <div class="aside-filter-item-content-box">
+                        <label class="aside-filter-content-label">
+                          <input type="checkbox" class="filter-style">
+                          <span class="aside-filter-content-label-text">Hit</span>
+                        </label>
+                      </div>
+                      <div class="aside-filter-item-content-box">
+                        <label class="aside-filter-content-label">
+                          <input type="checkbox" class="filter-style">
+                          <span class="aside-filter-content-label-text">Диллер</span>
                         </label>
                       </div>
                     </div>
                   </li>
-
                   <li class="aside-filter-item-drop">
                     <p class="aside-filer-item-title filter-item-drop">Страна</p>
                     <div class="aside-filter-item-content-wrap">
@@ -343,16 +356,24 @@
                           США
                         </label>
                       </div>
+                      <div class="filter-more">
+                        <button type="submit" class="filter-more-btn">Показать еще</button>
+                      </div>
                     </div>
                   </li>
-
                 </ul>
+                <footer class="filter-form-footer">
+                  <button type="submit" class="submit-filter-form-btn">Выбрать</button>
+                  <p class="extra-options">Дополнительные параметры</p>
+                  <div class="filter-item-drop-active">aaa</div>
+                  <button type="submit" class="drop-filter-btn">Сбросить фильтр</button>
+                </footer>
               </form>
             </div>
             <div id="filtr2" class="catalog-aside-content-item content-item">
               <form id="aside-mark-search" class="aside-mark-filter-form">
                 <input class="search-input" type="text" placeholder="Введите марку">
-                <button class="search-submit">Искать</button>
+                <button type="submit" class="search-submit">Искать</button>
               </form>
             </div>
           </div>
@@ -360,7 +381,7 @@
         <div class="catalog-inner-list">
           <div class="product-item-wrapper">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">Посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -373,7 +394,7 @@
           </div>
           <div class="product-item-wrapper product-sale">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite"  class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -386,7 +407,7 @@
           </div>
           <div class="product-item-wrapper product-sale">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -399,7 +420,7 @@
           </div>
           <div class="product-item-wrapper">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -412,7 +433,7 @@
           </div>
           <div class="product-item-wrapper">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -425,7 +446,7 @@
           </div>
           <div class="product-item-wrapper">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -438,7 +459,20 @@
           </div>
           <div class="product-item-wrapper product-sale">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
+            <a href="#" class="product-item">
+              <p class="product-hover-text">посмотреть товар</p>
+              <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
+              <h4 class="product-name">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
+              <p class="product-price">1 049 500 ₽</p>
+            </a>
+            <button class="add-to-cart">
+              <img src="assets/images/white-cart.svg" alt="white-cart">
+            </button>
+          </div>
+          <div class="product-item-wrapper">
+            <a href="#" class="sale-label">Sale</a>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -451,7 +485,7 @@
           </div>
           <div class="product-item-wrapper">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -464,7 +498,7 @@
           </div>
           <div class="product-item-wrapper">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -477,7 +511,7 @@
           </div>
           <div class="product-item-wrapper">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -490,27 +524,14 @@
           </div>
           <div class="product-item-wrapper">
             <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
               <h4 class="product-name">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
               <p class="product-price">1 049 500 ₽</p>
             </a>
-            <button href="#" class="add-to-cart">
-              <img src="assets/images/white-cart.svg" alt="white-cart">
-            </button>
-          </div>
-          <div class="product-item-wrapper">
-            <a href="#" class="sale-label">Sale</a>
-            <button href="" class="favorite"></button>
-            <a href="#" class="product-item">
-              <p class="product-hover-text">посмотреть товар</p>
-              <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
-              <h4 class="product-name">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
-              <p class="product-price">1 049 500 ₽</p>
-            </a>
-            <button href="#" class="add-to-cart">
+            <button class="add-to-cart">
               <img src="assets/images/white-cart.svg" alt="white-cart">
             </button>
           </div>
