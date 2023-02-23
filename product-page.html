@@ -216,32 +216,107 @@
           Отзывы
         </div>
         <div id="pickup" class=" content-item content-item-active">
-          <ul class="product-card-content-list">
-            <li class="product-card-content-item">
-              <div class="product-card-content-item-name">Производитель</div>
-              <div class="product-card-content-item-value">Канада</div>
-            </li>
-            <li class="product-card-content-item">
-              <div class="product-card-content-item-name">Количество мест, шт: </div>
-              <div class="product-card-content-item-value">3</div>
-            </li>
-            <li class="product-card-content-item">
-              <div class="product-card-content-item-name">Мощность, л.с.</div>
-              <div class="product-card-content-item-value">155</div>
-            </li>
-            <li class="product-card-content-item">
-              <div class="product-card-content-item-name">Тип двигателя</div>
-              <div class="product-card-content-item-value">Бензиновый</div>
-            </li>
-            <li class="product-card-content-item">
-              <div class="product-card-content-item-name">Год выпуска</div>
-              <div class="product-card-content-item-value"> 2018</div>
-            </li>
-          </ul>
-          <a href="#" class="product-card-content-item-show-more">Показать еще</a>
-          <div class="product-card-content-btn">
-            <button>Купить</button>
-          </div>
+          <form class="product-page-pickup-content">
+            <div class="product-page-pickup-content-item-search-box">
+              <div class="product-page-pickup-content-item-search-box-block">
+                <label class="product-page-pickup-content-item-search-label">Магазин
+                <input type="text" class="product-page-pickup-content-item-search">
+              </label>
+              </div>
+              <div class="product-page-pickup-content-item-search-box-block">
+              <label class="product-page-pickup-content-item-radio-label">
+                <input type="radio" name="pickup" class="product-page-pickup-content-item-checkbox filter-style">
+                Забрать сегодня
+              </label>
+              <label class="product-page-pickup-content-item-radio-label">
+                <input type="radio" name="pickup" checked class="product-page-pickup-content-item-checkbox filter-style">
+                Забрать в течение недели</label>
+              </div>
+            </div>
+            <ul class="product-page-pickup-content-list">
+              <li class="product-page-pickup-content-item product-card-content-item-title">
+                <div class="product-card-content-item-address">Адрес</div>
+                <div class="product-card-content-item-workhours">Режим работы</div>
+                <div class="product-card-content-item-available">Доступно</div>
+                <div class="product-card-content-item-amount">Количество</div>
+                <div class="product-page-pickup-content-btn">
+                  <button>Купить</button>
+                </div>
+              </li>
+              <li class="product-page-pickup-content-item">
+                <div class="product-card-content-item-address">Москва, ул. Науки 25</div>
+                <div class="product-card-content-item-workhours">
+                  <div class="product-card-content-item-time">
+                    <span class="product-card-content-item-days">пн-сб:</span>
+                    <span class="product-card-content-item-hours">08:00-19:00</span>
+                  </div>
+                  <div class="product-card-content-item-time">
+                    <span class="product-card-content-item-days">вс:</span>
+                    <span class="product-card-content-item-hours">09:00-17:00</span>
+                  </div>
+                </div>
+                <div class="product-card-content-item-available">В наличии</div>
+                <div class="product-card-content-item-amount">1</div>
+                <div class="product-page-pickup-content-btn">
+                  <button>Купить</button>
+                </div>
+              </li>
+              <li class="product-page-pickup-content-item">
+                <div class="product-card-content-item-address">Москва, ул.  Южная 134</div>
+                <div class="product-card-content-item-workhours">
+                  <div class="product-card-content-item-time">
+                    <span class="product-card-content-item-days">пн-сб:</span>
+                    <span class="product-card-content-item-hours">08:00-19:00</span>
+                  </div>
+                  <div class="product-card-content-item-time">
+                    <span class="product-card-content-item-days">вс:</span>
+                    <span class="product-card-content-item-hours">09:00-17:00</span>
+                  </div>
+                </div>
+                <div class="product-card-content-item-available">В наличии</div>
+                <div class="product-card-content-item-amount">2</div>
+                <div class="product-page-pickup-content-btn">
+                  <button>Купить</button>
+                </div>
+              </li>
+              <li class="product-page-pickup-content-item">
+                <div class="product-card-content-item-address">Санкт-Петербург, ул. Красная 19</div>
+                <div class="product-card-content-item-workhours">
+                  <div class="product-card-content-item-time">
+                    <span class="product-card-content-item-days">пн-сб:</span>
+                    <span class="product-card-content-item-hours">08:00-19:00</span>
+                  </div>
+                  <div class="product-card-content-item-time">
+                    <span class="product-card-content-item-days">вс:</span>
+                    <span class="product-card-content-item-hours">09:00-17:00</span>
+                  </div>
+                </div>
+                <div class="product-card-content-item-available">Нет в наличии</div>
+                <div class="product-card-content-item-amount">0</div>
+                <div class="product-page-pickup-content-btn">
+                  <button>Купить</button>
+                </div>
+              </li>
+              <li class="product-page-pickup-content-item">
+                <div class="product-card-content-item-address">Киев, ул Шевченко 167</div>
+                <div class="product-card-content-item-workhours">
+                  <div class="product-card-content-item-time">
+                    <span class="product-card-content-item-days">пн-сб:</span>
+                    <span class="product-card-content-item-hours">08:00-19:00</span>
+                  </div>
+                  <div class="product-card-content-item-time">
+                    <span class="product-card-content-item-days">вс:</span>
+                    <span class="product-card-content-item-hours">09:00-17:00</span>
+                  </div>
+                </div>
+                <div class="product-card-content-item-available">Нет в наличии</div>
+                <div class="product-card-content-item-amount">0</div>
+                <div class="product-page-pickup-content-btn">
+                  <button>Купить</button>
+                </div>
+              </li>
+            </ul>
+        </form>
         </div>
         <div id="delivery" class="content-item">
           Доставка
@@ -255,6 +330,253 @@
       </div>
     </div>
   </section>
+  <section class="related-products">
+    <div class="container">
+      <div class="popular-product-inner">
+        <h4 class="popular-products-title">
+          С этим товаром покупают
+        </h4>
+        <div class="popular-products-tabs">
+          <a href="#related-prod-tab1" class="products-tab tab">Запчасти</a>
+          <a href="#related-prod-tab2" class="products-tab tab tab-active">Моторы</a>
+          <a href="#related-prod-tab3" class="products-tab tab">Шины</a>
+          <a href="#related-prod-tab4" class="products-tab tab">Электроника</a>
+          <a href="#related-prod-tab5" class="products-tab tab">Инструменты</a>
+          <a href="#related-prod-tab6" class="products-tab tab">Материалы</a>
+        </div>
+        <div class="related-prod-content">
+          <div id="related-prod-tab1" class="content-item popular-products-slider">
+            <div class="product-item-wrapper">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod1.png" alt="" class="product-image">
+                <h4 class="product-name">Водонепроницаемый Рюкзак</h4>
+                <p class="product-price">9 800 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper product-sale">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod2.png" alt="" class="product-image">
+                <h4 class="product-name">Спасательный жилет BRP Men's Airflow PFD</h4>
+                <p class="product-price">6 900 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper">
+              <div class="favorite"></div>
+              <a class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod3.png" alt="" class="product-image">
+                <h4 class="product-name">BRP Audio-Premium System</h4>
+                <p class="product-price">68 000 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper product-not-available product-sale">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item ">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod4.png" alt="" class="product-image">
+                <h4 class="product-name">Спасательный жилет BRP Men's Airflow PFD</h4>
+                <p class="product-price">6 900 ₽</p>
+                <p class="product-notify-text">нет в наличии</p>
+              </a>
+              <a href="#" class="product-notify-link">
+                <span>Сообщить о поступлении</span>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod1.png" alt="" class="product-image">
+                <h4 class="product-name">Водонепроницаемый Рюкзак</h4>
+                <p class="product-price">9 800 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper product-sale">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod2.png" alt="" class="product-image">
+                <h4 class="product-name">Спасательный жилет BRP Men's Airflow PFD</h4>
+                <p class="product-price">6 900 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper">
+              <div class="favorite"></div>
+              <a class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod3.png" alt="" class="product-image">
+                <h4 class="product-name">BRP Audio-Premium System</h4>
+                <p class="product-price">68 000 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper product-not-available product-sale">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item ">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod4.png" alt="" class="product-image">
+                <h4 class="product-name">Спасательный жилет BRP Men's Airflow PFD</h4>
+                <p class="product-price">6 900 ₽</p>
+                <p class="product-notify-text">нет в наличии</p>
+              </a>
+              <a href="#" class="product-notify-link">
+                <span>Сообщить о поступлении</span>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+          </div>
+          <div id="related-prod-tab2" class="content-item popular-products-slider content-item-active">
+            <div class="product-item-wrapper">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod1.png" alt="" class="product-image">
+                <h4 class="product-name">Водонепроницаемый Рюкзак</h4>
+                <p class="product-price">9 800 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper product-sale">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod2.png" alt="" class="product-image">
+                <h4 class="product-name">Спасательный жилет BRP Men's Airflow PFD</h4>
+                <p class="product-price">6 900 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper">
+              <div class="favorite"></div>
+              <a class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod3.png" alt="" class="product-image">
+                <h4 class="product-name">BRP Audio-Premium System</h4>
+                <p class="product-price">68 000 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper product-not-available product-sale">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item ">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod4.png" alt="" class="product-image">
+                <h4 class="product-name">Спасательный жилет BRP Men's Airflow PFD</h4>
+                <p class="product-price">6 900 ₽</p>
+                <p class="product-notify-text">нет в наличии</p>
+              </a>
+              <a href="#" class="product-notify-link">
+                <span>Сообщить о поступлении</span>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod1.png" alt="" class="product-image">
+                <h4 class="product-name">Водонепроницаемый Рюкзак</h4>
+                <p class="product-price">9 800 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper product-sale">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod2.png" alt="" class="product-image">
+                <h4 class="product-name">Спасательный жилет BRP Men's Airflow PFD</h4>
+                <p class="product-price">6 900 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper">
+              <div class="favorite"></div>
+              <a class="product-item">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod3.png" alt="" class="product-image">
+                <h4 class="product-name">BRP Audio-Premium System</h4>
+                <p class="product-price">68 000 ₽</p>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+            <div class="product-item-wrapper product-not-available product-sale">
+              <a href="#" class="sale-label">Sale</a>
+              <div class="favorite"></div>
+              <a href="#" class="product-item ">
+                <p class="product-hover-text">посмотреть товар</p>
+                <img src="assets/images/content/rel-prod4.png" alt="" class="product-image">
+                <h4 class="product-name">Спасательный жилет BRP Men's Airflow PFD</h4>
+                <p class="product-price">6 900 ₽</p>
+                <p class="product-notify-text">нет в наличии</p>
+              </a>
+              <a href="#" class="product-notify-link">
+                <span>Сообщить о поступлении</span>
+              </a>
+              <button class="add-to-cart">
+                <img src="assets/images/white-cart.svg" alt="white-cart">
+              </button>
+            </div>
+          </div>
+          <div id="related-prod-tab3" class="content-item popular-products-slider">slider3</div>
+          <div id="related-prod-tab4" class="content-item popular-products-slider">slider4</div>
+          <div id="related-prod-tab5" class="content-item popular-products-slider">slider5</div>
+          <div id="related-prod-tab6" class="content-item popular-products-slider">slider6</div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
@@ -262,7 +584,7 @@
           <div class="footer-top-item">
             <h6 class="footer-top-title">Подпишитесь на нашу рассылку
               и<br> узнавайте о акциях быстрее</h6>
-            <form action="" class="footer-form">
+            <form class="footer-form">
               <input type="text" placeholder="Введите ваш e-mail:">
               <button type="submit">Отправить</button>
             </form>
