@@ -68,6 +68,10 @@ $(document).ready(function () {
     hide_from_to: true
   });
 
+  $('.header-menu-button').on('click', function (e) {
+    $('.mobile-menu-list').toggleClass('mobile-menu-list-active');
+  });
+
   $(function () {
     $("#productCardRating").rateYo({
       ratedFill: "#1C62CD",
