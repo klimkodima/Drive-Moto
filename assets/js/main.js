@@ -7,6 +7,38 @@ $(document).ready(function () {
       slidesToScroll: 1,
       prevArrow: '<button class="popular-products-slider-prev-btn"><img src="assets/images/arrow-black-left.svg" alt="arrow left"></button>',
       nextArrow: '<button class="popular-products-slider-next-btn"><img src="assets/images/arrow-black-right.svg" alt="arrow next"></button>',
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            dots: true,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 920,
+          settings: {
+            slidesToShow: 2,
+            dots: true,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 620,
+          settings: {
+            slidesToShow: 1,
+            dots: true,
+            arrows: false,
+          }
+        }
+      ]
     }
   );
 
@@ -78,6 +110,11 @@ $(document).ready(function () {
       normalFill: "#C4C4C4",
       spacing: "7px"
     });
+  });
+
+  $('.footer-top-title-drop').on('click', function (e) {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer-top-title-drop-active');
   });
 
 });

@@ -26,11 +26,11 @@
       <div class="header-top">
         <div class="header-top-inner">
           <nav class="header-menu">
-            <button class="header-menu-button">
+            <div class="header-menu-button">
               <div class="header-menu-button-line"></div>
               <div class="header-menu-button-line"></div>
               <div class="header-menu-button-line"></div>
-            </button>
+            </div>
             <ul class="menu-list">
               <li class="menu-item">
                 <a href="#" class="menu-link">Магазины</a>
@@ -267,6 +267,7 @@
           <div id="tab2" class="search-content-item content-item content-item-active">
             <form id="mark-search" class="search-content-form">
               <input class="search-input" type="text" placeholder="Введите марку">
+              <button title="search" class="search-image"></button>
               <button class="search-submit">Искать</button>
             </form>
           </div>
@@ -280,7 +281,6 @@
       </div>
     </div>
   </div>
-  <!--
   <section class="categories">
     <div class="container">
       <div class="section-categories-inner">
@@ -341,19 +341,21 @@
       </div>
     </div>
   </section>
-  <section class="popular-products">
+  <section class="popular-product">
     <div class="container">
       <div class="popular-product-inner">
         <h4 class="popular-products-title">
           Популярные товары
         </h4>
-        <div class="popular-products-tabs">
-          <a href="#prod-tab1" class="products-tab tab">Запчасти</a>
-          <a href="#prod-tab2" class="products-tab tab tab-active">Моторы</a>
-          <a href="#prod-tab3" class="products-tab tab">Шины</a>
-          <a href="#prod-tab4" class="products-tab tab">Электроника</a>
-          <a href="#prod-tab5" class="products-tab tab">Инструменты</a>
-          <a href="#prod-tab6" class="products-tab tab">Материалы</a>
+        <div class="mobile-wrapper">
+          <div class="popular-products-tabs">
+            <a href="#prod-tab1" class="products-tab tab">Запчасти</a>
+            <a href="#prod-tab2" class="products-tab tab tab-active">Моторы</a>
+            <a href="#prod-tab3" class="products-tab tab">Шины</a>
+            <a href="#prod-tab4" class="products-tab tab">Электроника</a>
+            <a href="#prod-tab5" class="products-tab tab">Инструменты</a>
+            <a href="#prod-tab6" class="products-tab tab">Материалы</a>
+          </div>
         </div>
         <div class="popular-products-content">
           <div id="prod-tab1" class="content-item popular-products-slider">
@@ -593,10 +595,11 @@
       </div>
     </div>
   </section>
-  <div class="banner">
+ <div class="banner">
     <div class="container">
       <a class="banner-link" href="#">
-        <img src="assets/images/content/banner.jpg" alt="banner">
+        <img class="banner-img" src="assets/images/content/banner.jpg" alt="banner">
+        <img class="banner-img-mobile" src="assets/images/content/banner-mobile.png" alt="mobile banner">
       </a>
     </div>
   </div>
@@ -606,13 +609,15 @@
         <h4 class="popular-products-title">
           С этим товаром покупают
         </h4>
-        <div class="popular-products-tabs">
-          <a href="#related-prod-tab1" class="products-tab tab">Запчасти</a>
-          <a href="#related-prod-tab2" class="products-tab tab tab-active">Моторы</a>
-          <a href="#related-prod-tab3" class="products-tab tab">Шины</a>
-          <a href="#related-prod-tab4" class="products-tab tab">Электроника</a>
-          <a href="#related-prod-tab5" class="products-tab tab">Инструменты</a>
-          <a href="#related-prod-tab6" class="products-tab tab">Материалы</a>
+        <div class="mobile-wrapper">
+          <div class="popular-products-tabs">
+            <a href="#related-prod-tab1" class="products-tab tab">Запчасти</a>
+            <a href="#related-prod-tab2" class="products-tab tab tab-active">Моторы</a>
+            <a href="#related-prod-tab3" class="products-tab tab">Шины</a>
+            <a href="#related-prod-tab4" class="products-tab tab">Электроника</a>
+            <a href="#related-prod-tab5" class="products-tab tab">Инструменты</a>
+            <a href="#related-prod-tab6" class="products-tab tab">Материалы</a>
+          </div>
         </div>
         <div class="related-prod-content">
           <div id="related-prod-tab1" class="content-item popular-products-slider">
@@ -844,6 +849,11 @@
           <div id="related-prod-tab5" class="content-item popular-products-slider">slider5</div>
           <div id="related-prod-tab6" class="content-item popular-products-slider">slider6</div>
         </div>
+        <div class="popular-products-footer">
+          <div class="show-more">
+            <a href="#" class="show-more-link">Показать еще</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -859,8 +869,8 @@
               <button type="submit">Отправить</button>
             </form>
           </div>
-          <div class="footer-top-item">
-            <h6 class="footer-top-title">Информация</h6>
+          <div class="footer-top-item footer-top-item-drop">
+            <h6 class="footer-top-title footer-top-title-drop">Информация</h6>
             <ul class="footer-list">
               <li class="footer-list-item">
                 <a href="" class="footer-list-link">
@@ -884,8 +894,8 @@
               </li>
             </ul>
           </div>
-          <div class="footer-top-item">
-            <h6 class="footer-top-title">Интернет-магазин</h6>
+          <div class="footer-top-item footer-top-item-drop">
+            <h6 class="footer-top-title footer-top-title-drop">Интернет-магазин</h6>
             <ul class="footer-list">
               <li class="footer-list-item">
                 <a href="" class="footer-list-link">
@@ -898,7 +908,7 @@
                 </a>
               </li>
               <li class="footer-list-item">
-                <a href="" class="footer-list-link">
+                <a href="">
                   Возврат-обмен
                 </a>
               </li>
@@ -940,7 +950,7 @@
         </div>
       </div>
     </div>
-  </footer>-->
+  </footer>
   <script src="assets/js/jquery-3.6.3.min.js"></script>
   <script src="assets/lib/slick/slick.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
