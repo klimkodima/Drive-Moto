@@ -4,28 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="assets/css/fonts.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/lib/rangeslider/rangeSlider.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
   <link rel="stylesheet" href="assets/lib/formstyler/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="assets/lib/formstyler/jquery.formstyler.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media.css">
   <title>Drive Moto</title>
 </head>
 
 <body>
   <div class="header">
-    <div class="header-top">
-      <div class="container">
+    <div class="container">
+      <div class="header-top">
         <div class="header-top-inner">
           <nav class="header-menu">
+            <div class="header-menu-button">
+              <div class="header-menu-button-line"></div>
+              <div class="header-menu-button-line"></div>
+              <div class="header-menu-button-line"></div>
+            </div>
             <ul class="menu-list">
               <li class="menu-item">
                 <a href="#" class="menu-link">Магазины</a>
@@ -66,9 +71,104 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="header-bottom">
-      <div class="container">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/user.svg" alt="user" class="mobile-menu-img">
+            <p>Войти</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/user.svg" alt="user" class="mobile-menu-img">
+            <p>Регистрация</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/heart.svg" alt="user" class="mobile-menu-img">
+            <p>Избранное</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/cart.svg" alt="user" class="mobile-menu-img">
+            <p>Корзина</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/shop.svg" alt="user" class="mobile-menu-img">
+            <p>Магазины</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/action.svg" alt="user" class="mobile-menu-img">
+            <p>Акции</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/card.svg" alt="user" class="mobile-menu-img">
+            <p>Доставка и оплата</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Квадроциклы</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Катера</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Гидроциклы</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Лодки</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Вездеходы</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Снегоходы</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Двигатели</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Запчасти</p>
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-wrapper mobile-menu-line-wrapper">
+        <ul class="mobile-menu-line">
+          <li class="mobile-menu-line-item">
+            <a href="#" class="menu-link">Магазины</a>
+          </li>
+          <li class="mobile-menu-line-item">
+            <a href="#" class="menu-link">Акции</a>
+          </li>
+          <li class="mobile-menu-line-item">
+            <a href="#" class="menu-link">Доставка и оплата</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-bottom">
         <ul class="menu-categories">
           <li class="menu-categories-item">
             <a href="#" class="menu-categories-link">Квадроциклы</a>
@@ -100,14 +200,16 @@
   </div>
   <div class="breadcrumbs">
     <div class="container">
-      <ul class="beadcruambs-list">
-        <li class="breadcrumbs-list-item">
-          <a href="">Главная</a>
-        </li>
-        <li class="breadcrumbs-list-item">
-          <span>Гидроциклы</span>
-        </li>
-      </ul>
+      <div class="breadcrumbs-inner">
+        <ul class="beadcruambs-list">
+          <li class="breadcrumbs-list-item">
+            <a href="">Главная</a>
+          </li>
+          <li class="breadcrumbs-list-item">
+            <span>Гидроциклы</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <section class="catalog">
@@ -150,14 +252,17 @@
         </div>
       </div>
       <div class="catalog-inner">
+        <button class="aside-button">Фильтр</button>
         <aside class="catalog-inner-aside">
-          <div class="catalog-aside-tabs">
-            <a href="#filtr1" class=" tab catalog-aside-tab tab-active">
-              <span>Параметры</span>
-            </a>
-            <a href="#filtr2" class=" tab catalog-aside-tab">
-              <span>По марке</span>
-            </a>
+          <div class="mobile-wrapper">
+            <div class="catalog-aside-tabs">
+              <a href="#filtr1" class=" tab catalog-aside-tab tab-active">
+                <span>Параметры</span>
+              </a>
+              <a href="#filtr2" class=" tab catalog-aside-tab">
+                <span>По марке</span>
+              </a>
+            </div>
           </div>
           <div class="catalog-aside-content">
             <div id="filtr1" class="catalog-aside-content-item content-item content-item-active">
@@ -206,8 +311,9 @@
                   <li class="aside-filter-item-drop">
                     <p class="aside-filer-item-title filter-item-drop">Цена</p>
                     <div class="aside-filter-item-content">
-                      <input aria-label="range-slider" type="text" class="js-range-slider" name="my_range" value="" data-type="double"
-                        data-min="100000" data-max="500000" data-from="150000" data-to="350000" data-grid="false">
+                      <input aria-label="range-slider" type="text" class="js-range-slider" name="my_range" value=""
+                        data-type="double" data-min="100000" data-max="500000" data-from="150000" data-to="350000"
+                        data-grid="false">
                     </div>
                   </li>
                   <li class="aside-filter-item-lists">
@@ -394,7 +500,7 @@
           </div>
           <div class="product-item-wrapper product-sale">
             <a href="#" class="sale-label">Sale</a>
-            <button title="favorite"  class="favorite"></button>
+            <button title="favorite" class="favorite"></button>
             <a href="#" class="product-item">
               <p class="product-hover-text">посмотреть товар</p>
               <img src="assets/images/content/gidrosikl1.png" alt="" class="product-image">
@@ -562,8 +668,8 @@
               <button type="submit">Отправить</button>
             </form>
           </div>
-          <div class="footer-top-item">
-            <h6 class="footer-top-title">Информация</h6>
+          <div class="footer-top-item footer-top-item-drop">
+            <h6 class="footer-top-title footer-top-title-drop">Информация</h6>
             <ul class="footer-list">
               <li class="footer-list-item">
                 <a href="" class="footer-list-link">
@@ -587,8 +693,8 @@
               </li>
             </ul>
           </div>
-          <div class="footer-top-item">
-            <h6 class="footer-top-title">Интернет-магазин</h6>
+          <div class="footer-top-item footer-top-item-drop">
+            <h6 class="footer-top-title footer-top-title-drop">Интернет-магазин</h6>
             <ul class="footer-list">
               <li class="footer-list-item">
                 <a href="" class="footer-list-link">
@@ -601,7 +707,7 @@
                 </a>
               </li>
               <li class="footer-list-item">
-                <a href="" class="footer-list-link">
+                <a href="">
                   Возврат-обмен
                 </a>
               </li>

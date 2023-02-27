@@ -9,22 +9,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/lib/rangeslider/rangeSlider.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
   <link rel="stylesheet" href="assets/lib/formstyler/jquery.formstyler.theme.css">
   <link rel="stylesheet" href="assets/lib/formstyler/jquery.formstyler.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media.css">
   <title>Drive Moto</title>
 </head>
 
 <body>
   <div class="header">
-    <div class="header-top">
-      <div class="container">
+    <div class="container">
+      <div class="header-top">
         <div class="header-top-inner">
           <nav class="header-menu">
+            <div class="header-menu-button">
+              <div class="header-menu-button-line"></div>
+              <div class="header-menu-button-line"></div>
+              <div class="header-menu-button-line"></div>
+            </div>
             <ul class="menu-list">
               <li class="menu-item">
                 <a href="#" class="menu-link">Магазины</a>
@@ -65,9 +71,104 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="header-bottom">
-      <div class="container">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/user.svg" alt="user" class="mobile-menu-img">
+            <p>Войти</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/user.svg" alt="user" class="mobile-menu-img">
+            <p>Регистрация</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/heart.svg" alt="user" class="mobile-menu-img">
+            <p>Избранное</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/cart.svg" alt="user" class="mobile-menu-img">
+            <p>Корзина</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/shop.svg" alt="user" class="mobile-menu-img">
+            <p>Магазины</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/action.svg" alt="user" class="mobile-menu-img">
+            <p>Акции</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <img src="assets/images/card.svg" alt="user" class="mobile-menu-img">
+            <p>Доставка и оплата</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Квадроциклы</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Катера</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Гидроциклы</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Лодки</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Вездеходы</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Снегоходы</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Двигатели</p>
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">
+            <p>Запчасти</p>
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-wrapper mobile-menu-line-wrapper">
+        <ul class="mobile-menu-line">
+          <li class="mobile-menu-line-item">
+            <a href="#" class="menu-link">Магазины</a>
+          </li>
+          <li class="mobile-menu-line-item">
+            <a href="#" class="menu-link">Акции</a>
+          </li>
+          <li class="mobile-menu-line-item">
+            <a href="#" class="menu-link">Доставка и оплата</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-bottom">
         <ul class="menu-categories">
           <li class="menu-categories-item">
             <a href="#" class="menu-categories-link">Квадроциклы</a>
@@ -99,17 +200,19 @@
   </div>
   <div class="breadcrumbs">
     <div class="container">
-      <ul class="beadcruambs-list">
-        <li class="breadcrumbs-list-item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs-list-item">
-          <a href="#">Гидроциклы</a>
-        </li>
-        <li class="breadcrumbs-list-item">
-          <span>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
-        </li>
-      </ul>
+      <div class="breadcrumbs-inner">
+        <ul class="beadcruambs-list">
+          <li class="breadcrumbs-list-item">
+            <a href="">Главная</a>
+          </li>
+          <li class="breadcrumbs-list-item">
+            <a href="">Гидроциклы</a>
+          </li>
+          <li class="breadcrumbs-list-item">
+            <span>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <section class="product-card">
@@ -177,33 +280,38 @@
             </div>
           </div>
         </div>
+        <div class=" product-card-content-btn product-card-content-btn-mobile">
+          <button>Купить</button>
+        </div>
       </div>
     </div>
   </section>
-  <section class="product-page-info">
+  <div class="product-page-info">
     <div class="container">
-      <div class="product-page-tabs">
-        <a href="#aboutProduct" class="tab product-tab ">
-          <span>О товаре</span>
-        </a>
-        <a href="#charProduct" class="tab product-tab">
-          <span>Характеристики</span>
-        </a>
-        <a href="#reviews" class="tab product-tab">
-          <span>Отзывы</span>
-        </a>
-        <a href="#pickup" class="tab product-tab tab-active">
-          <span>Самовывоз</span>
-        </a>
-        <a href="#delivery" class="tab product-tab">
-          <span> Доставка</span>
-        </a>
-        <a href="#service" class="tab product-tab">
-          <span>Cервис</span>
-        </a>
-        <a href="#guarantee" class="tab product-tab">
-          <span>Гарантия</span>
-        </a>
+      <div class="mobile-wrapper">
+        <div class="product-page-tabs">
+          <a href="#aboutProduct" class="tab product-tab ">
+            <span>О товаре</span>
+          </a>
+          <a href="#charProduct" class="tab product-tab">
+            <span>Характеристики</span>
+          </a>
+          <a href="#reviews" class="tab product-tab">
+            <span>Отзывы</span>
+          </a>
+          <a href="#pickup" class="tab product-tab tab-active">
+            <span>Самовывоз</span>
+          </a>
+          <a href="#delivery" class="tab product-tab">
+            <span> Доставка</span>
+          </a>
+          <a href="#service" class="tab product-tab">
+            <span>Cервис</span>
+          </a>
+          <a href="#guarantee" class="tab product-tab">
+            <span>Гарантия</span>
+          </a>
+        </div>
       </div>
       <div class="product-page-info">
         <div id="aboutProduct" class="content-item">
@@ -220,17 +328,18 @@
             <div class="product-page-pickup-content-item-search-box">
               <div class="product-page-pickup-content-item-search-box-block">
                 <label class="product-page-pickup-content-item-search-label">Магазин
-                <input type="text" class="product-page-pickup-content-item-search">
-              </label>
+                  <input type="text" class="product-page-pickup-content-item-search">
+                </label>
               </div>
               <div class="product-page-pickup-content-item-search-box-block">
-              <label class="product-page-pickup-content-item-radio-label">
-                <input type="radio" name="pickup" class="product-page-pickup-content-item-checkbox filter-style">
-                Забрать сегодня
-              </label>
-              <label class="product-page-pickup-content-item-radio-label">
-                <input type="radio" name="pickup" checked class="product-page-pickup-content-item-checkbox filter-style">
-                Забрать в течение недели</label>
+                <label class="product-page-pickup-content-item-radio-label">
+                  <input type="radio" name="pickup" class="product-page-pickup-content-item-checkbox filter-style">
+                  Забрать сегодня
+                </label>
+                <label class="product-page-pickup-content-item-radio-label">
+                  <input type="radio" name="pickup" checked
+                    class="product-page-pickup-content-item-checkbox filter-style">
+                  Забрать в течение недели</label>
               </div>
             </div>
             <ul class="product-page-pickup-content-list">
@@ -262,7 +371,7 @@
                 </div>
               </li>
               <li class="product-page-pickup-content-item">
-                <div class="product-card-content-item-address">Москва, ул.  Южная 134</div>
+                <div class="product-card-content-item-address">Москва, ул. Южная 134</div>
                 <div class="product-card-content-item-workhours">
                   <div class="product-card-content-item-time">
                     <span class="product-card-content-item-days">пн-сб:</span>
@@ -316,7 +425,7 @@
                 </div>
               </li>
             </ul>
-        </form>
+          </form>
         </div>
         <div id="delivery" class="content-item">
           Доставка
@@ -329,20 +438,22 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <section class="related-products">
     <div class="container">
       <div class="popular-product-inner">
         <h4 class="popular-products-title">
           С этим товаром покупают
         </h4>
-        <div class="popular-products-tabs">
-          <a href="#related-prod-tab1" class="products-tab tab">Запчасти</a>
-          <a href="#related-prod-tab2" class="products-tab tab tab-active">Моторы</a>
-          <a href="#related-prod-tab3" class="products-tab tab">Шины</a>
-          <a href="#related-prod-tab4" class="products-tab tab">Электроника</a>
-          <a href="#related-prod-tab5" class="products-tab tab">Инструменты</a>
-          <a href="#related-prod-tab6" class="products-tab tab">Материалы</a>
+        <div class="mobile-wrapper">
+          <div class="popular-products-tabs">
+            <a href="#related-prod-tab1" class="products-tab tab">Запчасти</a>
+            <a href="#related-prod-tab2" class="products-tab tab tab-active">Моторы</a>
+            <a href="#related-prod-tab3" class="products-tab tab">Шины</a>
+            <a href="#related-prod-tab4" class="products-tab tab">Электроника</a>
+            <a href="#related-prod-tab5" class="products-tab tab">Инструменты</a>
+            <a href="#related-prod-tab6" class="products-tab tab">Материалы</a>
+          </div>
         </div>
         <div class="related-prod-content">
           <div id="related-prod-tab1" class="content-item popular-products-slider">
@@ -574,6 +685,11 @@
           <div id="related-prod-tab5" class="content-item popular-products-slider">slider5</div>
           <div id="related-prod-tab6" class="content-item popular-products-slider">slider6</div>
         </div>
+        <div class="popular-products-footer">
+          <div class="show-more">
+            <a href="#" class="show-more-link">Показать еще</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -589,8 +705,8 @@
               <button type="submit">Отправить</button>
             </form>
           </div>
-          <div class="footer-top-item">
-            <h6 class="footer-top-title">Информация</h6>
+          <div class="footer-top-item footer-top-item-drop">
+            <h6 class="footer-top-title footer-top-title-drop">Информация</h6>
             <ul class="footer-list">
               <li class="footer-list-item">
                 <a href="" class="footer-list-link">
@@ -614,8 +730,8 @@
               </li>
             </ul>
           </div>
-          <div class="footer-top-item">
-            <h6 class="footer-top-title">Интернет-магазин</h6>
+          <div class="footer-top-item footer-top-item-drop">
+            <h6 class="footer-top-title footer-top-title-drop">Интернет-магазин</h6>
             <ul class="footer-list">
               <li class="footer-list-item">
                 <a href="" class="footer-list-link">
@@ -628,7 +744,7 @@
                 </a>
               </li>
               <li class="footer-list-item">
-                <a href="" class="footer-list-link">
+                <a href="">
                   Возврат-обмен
                 </a>
               </li>

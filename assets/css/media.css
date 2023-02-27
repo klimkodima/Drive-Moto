@@ -19,6 +19,29 @@
   .popular-products-footer {
     margin-top: 73px;
   }
+
+  .catalog-filter {
+    flex-wrap: wrap;
+  }
+
+  .catalog-filter-items {
+    order: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .catalog-filters {
+    width: 100%;
+    padding: 15px 0;
+    border-top: 0.5px solid #C4C4C4;
+    border-bottom: 0.5px solid #C4C4C4;
+    margin-bottom: 30px;
+  }
+
+  .catalog-filters button {
+    display: none;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -81,12 +104,18 @@
     padding: 0;
   }
 
-  .mobile-wrapper {
+  .mobile-wrapper,
+  .breadcrumbs-inner {
     overflow-x: scroll;
   }
 
+  .breadcrumbs-inner {
+    padding-bottom: 10px;
+  }
+
   .search-tabs,
-  .popular-products-tabs {
+  .popular-products-tabs,
+  .beadcruambs-list {
     width: 980px;
   }
 
@@ -115,6 +144,102 @@
   .footer-bottom-link {
     margin: 0 0 12px 0;
   }
+
+  .product-card-inner {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .product-card-content {
+    order: -1;
+  }
+
+  .product-card-inner.product-sale .sale-label {
+    display: none;
+  }
+
+  .product-page-tabs {
+    flex-direction: column;
+    align-items: start;
+    background: transparent;
+  }
+
+  .product-tab.tab-active {
+    background: transparent;
+  }
+
+  .product-tab.tab-active span {
+    border-bottom: none;
+  }
+
+  .product-page-pickup-content {
+    margin-left: 0;
+  }
+
+  .product-page-pickup-content-item-search-box {
+    flex-direction: column;
+  }
+
+  .product-page-pickup-content-item-search-label {
+    flex-wrap: wrap;
+  }
+
+  .product-page-pickup-content-item-search {
+    width: 100%;
+    margin: 12px 0px 40px;
+    background: transparent;
+    border: 1px solid #F0F0F4;
+  }
+
+  .product-page-pickup-content-item-search-label::after {
+    top: 42px;
+  }
+
+  .product-page-pickup-content-item-radio-label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #C4C4C4;
+    padding: 14px 0 7px;
+  }
+
+  .product-page-pickup-content-item-search-box-block:last-of-type {
+    flex-wrap: wrap;
+  }
+
+  .product-page-pickup-content-item-checkbox {
+    order: 10;
+  }
+
+  .product-card-content-item-title {
+    display: none;
+  }
+
+  .product-page-pickup-content-item {
+    flex-direction: column;
+  }
+
+  .product-card-content-item-address,
+  .product-card-content-item-workhours,
+  .product-card-content-item-available,
+  .product-card-content-item-amount,
+  .product-page-pickup-content-btn {
+    margin: 0 auto 20px;
+    width: 100%;
+  }
+
+  .product-page-pickup-content-btn button {
+    width: 100%;
+  }
+
+  .catalog-inner {
+    flex-wrap: wrap;
+  }
+
+  .catalog-inner-list {
+    justify-content: space-around;
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -157,7 +282,6 @@
 
   .banner-link {
     width: 100%;
-    ;
   }
 
   .banner-img {
@@ -189,6 +313,10 @@
 
   .footer-list {
     display: none;
+  }
+
+  .footer-top-title-drop {
+    pointer-events: visible;
   }
 
   .footer-top-item:first-of-type {
@@ -224,6 +352,69 @@
   .footer-bottom {
     margin-top: 36px;
   }
+
+  .product-card-content-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .product-card-content-code {
+    margin-bottom: 9px;
+  }
+
+  .product-card-tabs {
+    display: none;
+  }
+
+  .product-card-info {
+    display: none;
+  }
+
+  .product-card-img-box {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .product-card-img-box img {
+    width: 100%;
+  }
+
+  .product-card-content-btn-mobile {
+    display: block;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-card-content-btn-mobile button {
+    width: 100%;
+  }
+
+  .jq-ry-container {
+    padding: 0px;
+  }
+
+  .product-card-content-heart-link,
+  .product-card-content-comparison-link {
+    margin-right: 24px;
+  }
+
+  .aside-button {
+    display: block;
+    width: 100%;
+    margin: 15px 0 50px;
+    text-transform: uppercase;
+    background-color: #1C62CD;
+    color: #FFF;
+    border: none;
+    padding: 10px 0;
+  }
+
+  .catalog-inner-aside {
+    display: none;
+  }
+
 }
 
 @media (max-width: 470px) {
@@ -243,5 +434,9 @@
 
   .category {
     padding: 20px 10px 15px;
+  }
+
+  .pagination-item {
+    margin: 0;
   }
 }
