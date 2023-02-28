@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "stylelint": "npx stylelint **/*.css",
+    "stylelint-fix": "stylelint **/*.css --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klimkodima/Drive-Moto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klimkodima/Drive-Moto/issues"
+  },
+  "homepage": "https://github.com/klimkodima/Drive-Moto#readme",
+  "dependencies": {
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-order": "^6.0.2"
+  }
+}
